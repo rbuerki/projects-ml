@@ -1,5 +1,5 @@
 # customer_lifetime_value_modelling
-A repository containing code and data for a project modelling clv in non-contracutal business.
+A repository containing code and data for a project modelling customer lifetime value (clv) in non-contracutal business.
 
 This project is based on an excellent [blogpost](https://towardsdatascience.com/whats-a-customer-worth-8daf183f8a4f) by Susan Li published on Medium. 
 
@@ -7,7 +7,7 @@ This project is based on an excellent [blogpost](https://towardsdatascience.com/
 
 In e-Commerce or the stationary retail business, the relationships between businesses and customers are non-contractual. In the non-contractual world, customers go away silently This makes CLV calculation tricky. We have to look at a customer’s purchase history and the time since his last transaction and ask a question: is the customer alive but dormant, or is the customer “dead” (“alive” means customers interact with us, “die” means they become inactive as customers)?
 
-The methodology is based on paper by Dr. Peter Fader of Wharton. The paper can be found in the repository. The complex underlying mathematics is handled by the lifetimes package (see below, and thanks for that!)
+The methodology is based on paper by Dr. Peter Fader of Wharton. The paper ("Counting Your Customers") can be found in the repository. The complex underlying mathematics is handled by the lifetimes package (see below, and thanks for that!)
 
 ### Install
 
@@ -53,7 +53,7 @@ This is a transnational data set which contains all the transactions occurring b
 - `StockCode`: Product (item) code. Nominal, a 5-digit integral number uniquely assigned to each distinct product. 
 - `Description`: Product (item) name. Nominal. 
 - `Quantity`: The quantities of each product (item) per transaction. Numeric. 
--`InvoiceDate`: Invice Date and time. Numeric, the day and time when each transaction was generated. 
+- `InvoiceDate`: Invoice Date and time. Numeric, the day and time when each transaction was generated. 
 - `UnitPrice`: Unit price. Numeric, Product price per unit in sterling. 
 - `CustomerID`: Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer. 
 - `Country`: Country name. Nominal, the name of the country where each customer resides. 
