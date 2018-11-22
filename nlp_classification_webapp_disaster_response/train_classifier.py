@@ -2,11 +2,39 @@ import sys
 
 
 def load_data(database_filepath):
-    pass
+    """Load 'messages' table into dataframe.
+    
+    ARGUMENTS:
+        database_filepath: string
+    RETURNS:
+        df: dataframe
+    """
+    
+    engine = create_engine(database_filepath)
+    df = pd.read_sql_table('messages', engine)
 
-
-def tokenize(text):
-    pass
+def tokenize_text(text):
+    """Process text data.
+    
+    ARGUMENTS:
+        text: str to be processed
+    RETURNS:
+        tokens: processed text
+    """
+    lemmatizer = WordNetLemmatizer()
+    stop_words = stopwords.words('english')
+    
+    # normalize case and remove punctuation
+    message = re.sub(r"[^a-zA-Z0-9]", " ", message.lower())
+    # tokenize text
+    tokens = word_tokenize(message)
+    # lemmatize, stip and remove stop words
+    tokens = [lemmatizer.lemmatize(word.strip()) \
+        for word in tokens if word not in stop_words]
+    # add part-of-speech tags
+    tokens = pos_tag(tokens)
+    
+    return tokens
 
 
 def build_model():
@@ -43,10 +71,11 @@ def main():
         print('Trained model saved!')
 
     else:
-        print('Please provide the filepath of the disaster messages database '\
-              'as the first argument and the filepath of the pickle file to '\
-              'save the model to as the second argument. \n\nExample: python '\
-              'train_classifier.py ../data/DisasterResponse.db classifier.pkl')
+        print('Please provide filepath of disaster messages database '\
+              'as 1st argument and filepath of pickle file to '\
+              'save the model to as 2nd argument. \n\nExample: python '\
+              'train_classifier.py ../data/DisasterResponse.db '\
+              'classifier.pkl')
 
 
 if __name__ == '__main__':
