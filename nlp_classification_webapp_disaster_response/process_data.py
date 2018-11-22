@@ -9,8 +9,9 @@ def load_data(messages_filepath, categories_filepath):
     messages = pd.read_csv(messages_filepath)
     categories = pd.read_csv(categories_filepath)
 
+    return messages, categories
 
-def clean_data(df):
+def clean_data(messages, categories):
     """Creates the categories columns, concatenates the two dataframes
        and cleans the data.
     """
@@ -35,9 +36,12 @@ def clean_data(df):
     df = df.loc[df['related'] != 2]
     # drop column `child_alone` (no associated messages)
     df.drop('child_alone', axis=1, inplace=True)
+    
+    return df
+    
 
-def save_data(df, database_filename):
-    engine = create_engine(database_filename)
+def save_data(df, database_filepath):
+    engine = create_engine('sqlite:///' + database_filepath)
     df.to_sql('messages', engine, index=False, if_exists='replace')  
 
 
@@ -48,10 +52,10 @@ def main():
 
         print('Loading data...\n    MESSAGES: {}\n    CATEGORIES: {}'
               .format(messages_filepath, categories_filepath))
-        df = load_data(messages_filepath, categories_filepath)
+        messages, categories = load_data(messages_filepath, categories_filepath)
 
         print('Cleaning data...')
-        df = clean_data(df)
+        df = clean_data(messages, categories)
         
         print('Saving data...\n    DATABASE: {}'.format(database_filepath))
         save_data(df, database_filepath)
