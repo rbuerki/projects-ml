@@ -5,9 +5,11 @@ A repository containing code and data for NLP Classification with Multi-Label Ta
 
 This project has two major parts:
 
-1. Data / ML Pipelines: Two pipelines for ETL of the input data and for model training (incl. GridsearchCV) with new data. 
+1. Data / ML Pipelines: 
+	- An ETL pipeline for input data processing
+	- A ML pipeline for model training (incl. GridsearchCV). 
 
-2. A web app for use during a disaster event, to classify a disaster message into several categories, in order that the message can be directed to the appropriate aid agencies.
+2. A web app for use during a disaster event. You can enter a disaster related message that is then classified into several categories so that it could be directed to the appropriate aid agencies.
 
 Note: For the two parts of the project two different models / ML pipelines have been created. For the main pipeline there is a model that takes the message and the corresponding genre category as input (saved as `classifier`), for the app there is a simpler model that takes only the message string as input (saved as `app_classifier`).
 
