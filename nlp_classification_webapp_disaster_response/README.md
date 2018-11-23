@@ -40,9 +40,9 @@ This project requires **Python 3.x** and the following Python libraries installe
 - `ETL Pipeline Preparation.ipynb`: Some code in this Jupyter notebook was used in the development of process_data.py. It contains basic exploration concerning cleaning and the decision on how to perform a stratified split into train / test sets.
 - `EDA on training set.ipynb`: Some deeper exploration of the input data performed on the training set.
 - `ML Model Evaluation.ipynb`: Code for testing of different baselines models (algorithms) and development of the pipeline that is used in train_classifier.py
-- models: Folder containing saved models and aslo an alternative ML training pipeline for training the simpler app classifier and the Model Evaluation notebook.
-- data: Folder containing messages and categories datasets in csv format. And also the EDA and ETL preparation notebooks.
-- templates: Folder containing the files necessary to run and render the web app.
+- `models`: Folder containing saved models and aslo an alternative ML training pipeline for training the simpler app classifier and the Model Evaluation notebook.
+- `data`: Folder containing messages and categories datasets in csv format. And also the EDA and ETL preparation notebooks.
+- `templates`: Folder containing the files necessary to run and render the web app.
 
 ### Run
 
