@@ -61,7 +61,7 @@ Launch Web App
 ```bash
 python run.py
 ```
-(Then go to http://0.0.0.0:3001)
+(Then go to http://0.0.0.0:3001, or on your local machine: http://127.0.0.1:3001/)
 
 
 ### Data (Warning)
