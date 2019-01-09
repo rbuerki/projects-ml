@@ -1,13 +1,16 @@
 # customer_lifetime_value_modelling
-A repository containing code and data for a project modelling customer lifetime value (clv) in non-contracutal business.
+A repository containing code and data for a project modelling customer lifetime value (clv) in non-contracutal business. It is based on a [blogpost](https://towardsdatascience.com/whats-a-customer-worth-8daf183f8a4f) by Susan Li published on Medium. 
 
-This project is based on an excellent [blogpost](https://towardsdatascience.com/whats-a-customer-worth-8daf183f8a4f) by Susan Li published on Medium. 
-
-### Introduction to the project and methodology
+### Introduction to the project
 
 In e-Commerce or the stationary retail business, the relationships between businesses and customers are non-contractual. In the non-contractual world, customers go away silently This makes CLV calculation tricky. We have to look at a customer’s purchase history and the time since his last transaction and ask a question: is the customer alive but dormant, or is the customer “dead” (“alive” means customers interact with us, “die” means they become inactive as customers)?
 
-The methodology is based on paper by Dr. Peter Fader of Wharton. The paper ("Counting Your Customers") can be found in the repository. The complex underlying mathematics is handled by the lifetimes package (see below, and thanks for that!)
+### Methodology, additional resources
+
+The methodology is based on paper by Dr. Peter Fader of Wharton. The paper ("Counting Your Customers") can be found in the repository. The complex underlying mathematics is handled by the lifetimes package (see below for link.)
+
+**Additional resources:**
+- Good [blogpost](https://towardsdatascience.com/survival-analysis-intuition-implementation-in-python-504fde4fcf8e) explaining the general concept (and python implementation) behind `survival analysis`
 
 ### Install
 
