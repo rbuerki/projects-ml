@@ -27,23 +27,8 @@ You will also need to have software installed to run and execute an [iPython Not
 
 ### Code
 
-The code is provided in the `blog_automotiveChurn.ipynb` notebook file. 
-It requires the `churnData.csv` dataset file to run. 
-
-### Run
-
-In a terminal or command window, navigate to the top-level project directory (the one that contains this README) 
-and run one of the following commands:
-
-```bash
-ipython notebook code_churnBlog.ipynb
-```  
-or
-```bash
-jupyter notebook code_churnBlog.ipynb
-```
-
-This will open the iPython Notebook software and project file in your browser.
+The code is provided in the `CLV_Non_Contractual.ipynb` notebook file. 
+It requires the `OnlineRetail.csv` dataset file to run. 
 
 ### Data
 
