@@ -7,10 +7,10 @@ In e-Commerce or the stationary retail business, the relationships between busin
 
 ### Methodology, additional resources
 
-The methodology is based on paper by Dr. Peter Fader of Wharton. The paper ("Counting Your Customers") can be found in the repository. The complex underlying mathematics is handled by the lifetimes package (see below for link.)
+The methodology is based on paper by Dr. Peter Fader of Wharton. The paper ("Counting Your Customers") can be found in the repository. The complex underlying mathematics is handled by the `lifetimes package` (see below for link.)
 
 **Additional resources:**
-- Good [blogpost](https://towardsdatascience.com/survival-analysis-intuition-implementation-in-python-504fde4fcf8e) explaining the general concept (and python implementation) behind `survival analysis`
+- Good [blogpost](https://towardsdatascience.com/survival-analysis-intuition-implementation-in-python-504fde4fcf8e) explaining the general concept behind `survival analysis` and the python implementation with the (different) [lifelines package](https://lifelines.readthedocs.io/en/latest/Quickstart.html)
 
 ### Install
 
