@@ -19,7 +19,7 @@ This project requires **Python 3.x** and the following Python libraries installe
 - [scikit-learn](http://scikit-learn.org/stable/)
 - [imblearn](imbalanced-learn.org)
 
-You will also need three custom files `cleaning_functions`, `EDA_functions`and `custom_transformers`that can be found in my `codebook`repository.
+You will also need three custom files `cleaning_functions`, `EDA_functions`and `custom_transformers`.
 
 You will also need to have software installed to run and execute an [iPython Notebook](http://ipython.org/notebook.html)
 
