@@ -17,7 +17,7 @@ This project requires **Python 3.x** and the following Python libraries installe
 - [matplotlib](http://matplotlib.org/)
 - [seaborn](http://seaborn.org)
 - [scikit-learn](http://scikit-learn.org/stable/)
-- [imblearn](imbalanced-learn.org)
+- [imbalanced-learn](https://imbalanced-learn.readthedocs.io/en/stable/)
 
 You will also need three custom files `cleaning_functions`, `EDA_functions`and `custom_transformers`.
 
