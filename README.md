@@ -19,8 +19,7 @@ Each project has it's own README providing more details.
 - **uplift_modelling_imbalanced_starbucks:** uplift modelling project dealing with very imbalanced target classes. The main point 
   was to experiment with the `imblearn` package and to create a pipeline that oversamples the minority target class with SMOTENC.
 
-- **recommender_systems_IBM-Watson:** more a showcase of different appraoches (rank-based, content-based (with NLP part), user-based, 
-  Funk-SVD) to creating a recommender system.
+- **recommender_systems_IBM-Watson:** More like a showcase of different approaches for creating a recommender system. (rank-based, content-based (with NLP part), user-based, Funk-SVD) 
   _Extensive resources section from Udacity's DS nanodegree course, also containing a complete recommender class._
  
 
