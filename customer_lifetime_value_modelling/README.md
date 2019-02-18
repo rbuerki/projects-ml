@@ -1,5 +1,5 @@
 # customer_lifetime_value_modelling
-A repository containing code and data for a project modelling customer lifetime value (clv) in non-contracutal business. It was inspired by one of Susan Li's [blogposts](https://towardsdatascience.com/whats-a-customer-worth-8daf183f8a4f) and is based on functionality of the `[lifetimes](https://github.com/CamDavidsonPilon/lifetimes)` package.
+A repository containing code and data for a project modelling customer lifetime value (clv) in non-contracutal business. It was inspired by one of Susan Li's [blogposts](https://towardsdatascience.com/whats-a-customer-worth-8daf183f8a4f) and is based on functionality of the [lifetimes](https://github.com/CamDavidsonPilon/lifetimes) package.
 
 ### Introduction to the methodology
 
@@ -14,14 +14,15 @@ The BG/NBD model looks at recency / frequency in a customer's purchase history t
 ### Project and code
 
 The **code** is split up into three notebooks:
-1. 1-data_prep_and_EDA.ipynb: Contains data cleaning / preparation and basic EDA
-2. 2-CLV_calculation.ipynb: Contains the actual modelling with BG/NBD and Gamma-Gamma
+1. 1-data_prep_and_EDA.ipynb: Data cleaning / preparation and basic EDA
+2. 2-CLV_calculation.ipynb: Actual modelling with BG/NBD and Gamma-Gamma
+3. 3-frequency_recency_analysis.ipynb: Analysis of Freq/Rec and P(alive) metrics
 3. z_lifetimes_basic_functionality.ipynb: Basically follows the lifetimes docs through the full functionality
 
 Main **findings** / results:
 - From EDA: Data set may not be ideally suited for this test, as it spans one year only and there is seasonality.
 - From modelling: CLV was underestimated, fit was not so good. May be partly due to saisonality in the set.
-- From functionality tests: P(alive) calculation on individual level with BG/NBD model is rather misleading.
+- From Freq/Rec: P(alive) calculation on individual level with BG/NBD model is rather misleading.
 
 ### Data
 
