@@ -1,4 +1,4 @@
-CustomerID,sales,frequency,recency,cum_prop
+CustomerID,sales,frequency,recency,flag
 18102,233736.93000000008,57,1,high
 17450,192521.94999999992,44,9,high
 16446,168472.5,2,1,high
