@@ -54,7 +54,3 @@ This project requires **Python 3.x** and the following Python libraries installe
 - [tqdm](https://pypi.org/project/tqdm/)
 
 You will also need to have software installed to run and execute an [iPython Notebook](http://ipython.org/notebook.html)
-
-### Additional resources
-
-- Good [blogpost](https://towardsdatascience.com/survival-analysis-intuition-implementation-in-python-504fde4fcf8e) explaining the general concept behind `survival analysis` and the python implementation with the (different) [lifelines package](https://lifelines.readthedocs.io/en/latest/Quickstart.html)

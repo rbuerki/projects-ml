@@ -1,22 +1,24 @@
 # blogPost-Churn
-A repository containing code and data for a churn prediction project in the automotive service business.
+A repository containing code and data for a project based on functionality of Cameron Davidson's [lifelines](https://github.com/CamDavidsonPilon/lifelines) package. Goal is to construct survival functions / survival curves for customers (as a whole, in cohorts and individual). 
 
-This code is a stringent revision of a larger project and serves as basis for a blog publication on Medium. 
-To write such an article (adressing people with a non-tech background) is a task in Udacity's Data Science program. 
-The article can be found [here](https://medium.com/@raph_91654/predict-churn-retain-your-customers-39cc62c322ed). 
+This is an alternative approach to churn analysis, based on the durations of customer relationship.
 
-### Introduction to project and results
+### Project and code
 
-The automotive retail business is under pressure. The industry relies heavily on recurring aftersales service revenues to make a profit.
-But customers are generally free to choose where to service their cars once they have bought them and so it is crucial for individual 
-car retail companies to turn their erstwhile buyers into loyal service customers. 
-The goal of this project is to help a large european automotive retail and service company to reduce its churn rate (= the ratio of
-customers who switch away from one supplier to another in a given period) by building a predictive model to identify customers 
-that are about to churn. The project was designed to answer 3 questions:
+Goal of the project is to explore part of the functionalities of the aforementioned `lifelines` package. 
 
-1) Can we effectively explain customer churn? (Yes, the model achieves a reasonable F1-score of 0.82 over all)
-2) What are main features leading to churn? (Top 3: car age, duration of relationship / recency, distance home to branch)
-3) How can we act? (This question is addressed in the blogpost only)
+The **code** is split up into two notebooks:
+1. 1-cohort_survival_curves_KaplanMeier.ipynb: The Kaplan-Meier estimator is a powerful non-parametric method to estimate Survival Curves for a Population / Cohort in general.
+2. 2-individual_survival_regression_CoxPropHazard.ipynb: The Cox (proportional hazard) model is one of the most popular models combining the covariates (features) and the general survival function (as calculated in nb 1) to estimate survival functions on the individual level.
+
+Some background and links to additional information can be found at the start of both notebooks.
+
+
+### Data
+
+The data is a set on Customer Churn in Telecomunications from IBM Watson Analytics. It can be downloaded [here](https://www.ibm.com/communities/analytics/watson-analytics-blog/Telco-Customer-Churn/).
+
+For general Survival Functions with Kaplan-Meier only a minimal feature set is needed: the time at which event occurred (death or censorship) and the lifetime duration between birth and event. For the individual curves it is necessary to have some meaningful covariates (features). 
 
 ### Install
 
@@ -26,66 +28,7 @@ This project requires **Python 3.x** and the following Python libraries installe
 - [Pandas](http://pandas.pydata.org)
 - [matplotlib](http://matplotlib.org/)
 - [seaborn](http://seaborn.org)
-- [scikit-learn](http://scikit-learn.org/stable/)
+- [lifelines](https://github.com/CamDavidsonPilon/lifelines)
 - [tqdm](https://pypi.org/project/tqdm/)
 
 You will also need to have software installed to run and execute an [iPython Notebook](http://ipython.org/notebook.html)
-
-### Code
-
-Template code is provided in the `blog_automotiveChurn.ipynb` notebook file. 
-It requires the `churnData.csv` dataset file to run. 
-
-### Run
-
-In a terminal or command window, navigate to the top-level project directory (the one that contains this README) 
-and run one of the following commands:
-
-```bash
-ipython notebook code_churnBlog.ipynb
-```  
-or
-```bash
-jupyter notebook code_churnBlog.ipynb
-```
-
-This will open the iPython Notebook software and project file in your browser.
-
-### Data
-
-The dataset consists of approximately 50,000 data points (=cars), with each datapoint having 43 features. 
-This dataset is a pre-cleaned version of the original dataset given to me by a large european automotive retail group.
-
-**Target Variable**
-- `target_event`: customer status ('CHURN', 'ACTIVE')
-
-**Features**
-- `NUM_CONSEC_SERVICES`: number of consequtive service events for a car
-- `SUM_INVOICE_AMOUNT`: sum of invoice amount that have been charged for all service events
-- `NUM_EVENTS`: total number of service visits
-- `LAST_MILEAGE`: mileage recorded at last visit
-- `MEAN_MILEAGE_PER_MNTH`: calculated mean mileage per month 
-- `age_mnth`: a car's age in months
-- `INSPECTION_INTERVAL_UID`: timespan a car has to show up for mandatory service in months
-- `LIST_PRICE`: car price
-- `CAR_BRAND_UID`: car brand
-- `FUEL_TYPE_UID`: fuel type
-- `GEAR_TYPE_UID`: gear type
-- `WHEEL_DRIVE_UID`: wheel drive type
-- `NUMBER_OF_DOORS`: number of doors
-- `GEAR_COUNT`: gear count
-- `BASE_MARGIN`: base margin for dealer
-- `SALES_TYPE`: car model
-- `PERSON_LANGUAGE_UID`: language of car owner
-- `PERSON_STATE`: address state of car owner
-- `PERSON_ADDRESS_COUNT`:number of addresses in CRM-system for car owner
-- `ownerAge`: age of car owner
-- `REGION_UID`: address region of car owner
-- `PARTNER_LANGUAGE_UID`: language of garage branch the car is affiliated with
-- `IS_PREFERRED_PARTNER`: branch type (company internal use)
-- `IS_DEALER`: branch type (company internal use)
-- `PARTER_STATE`: address state of garage branch
-- `PARTNER_ADDRESS_COUNT`:number of addresses in CRM-system for garage branch
--  ... 13 categorical socio-demografic features that have been bougth from third party supplier ...
-- `dist_metres` (sic!): distance in meters from customer home address to garage branch (travel by car)
-- `duration_days`: duration of customer relationship from first to last recorded service visits
