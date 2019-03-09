@@ -1,4 +1,4 @@
-# blogPost-Churn
+# Survival Analyis, Lifelines
 A repository containing code and data for a project based on functionality of Cameron Davidson's [lifelines](https://github.com/CamDavidsonPilon/lifelines) package. Goal is to construct survival functions / survival curves for customers (as a whole, in cohorts and individual). 
 
 This is an alternative approach to churn analysis, based on the durations of customer relationship.

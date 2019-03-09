@@ -16,10 +16,12 @@ Each project has it's own README providing more details.
   for message classification. The classification happens in a neat end-to-end sklearn pipeline.
   _The resources folder contains notebooks on bow / tfidf and on nlp pipelining from Udacity's DS nanondegree course._
 
+- **price_prediction_ames_housing:** WIP
+
 - **recommender_systems_IBM-Watson:** More like a showcase of different approaches for creating a recommender system. (rank-based, content-based (with NLP part), user-based, Funk-SVD) 
   _Extensive resources section from Udacity's DS nanodegree course, also containing a complete recommender class._
  
-- **survival_analysis_lifetimes:** WIP
+- **survival_analysis_lifetimes:** Exploration of the functionality of Cameron Davidson's lifelines package. Goal is to construct survival functions / survival curves for customers (as a whole, in cohorts and individual). This is an alternative approach to churn analysis, based on the durations of customer relationship.
 
 - **uplift_modelling_imbalanced_starbucks:** uplift modelling project dealing with very imbalanced target classes. The main point 
   was to experiment with the `imblearn` package and to create a pipeline that oversamples the minority target class with SMOTENC.
