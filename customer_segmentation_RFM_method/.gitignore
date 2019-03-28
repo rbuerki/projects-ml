@@ -3,6 +3,7 @@
 
 ### RAB's own stuff ###
 trash
+resources 
 
 ### JupyterNotebook ###
 .ipynb_checkpoints
