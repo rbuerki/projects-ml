@@ -1,9 +1,12 @@
 # Housing Price Prediction
-WIP ...
+
+ Supervised regression modelling to predict house prices. Comparision of ElasticNet and XGBoost. The focus of this project is on finding the right feature preprocessing and most of all on inspecting feature importances (among others with eli5 library).
 
 ### Introduction to project and results
 
-...
+The focus of this project is on finding the right feature preprocessing (for ElasticNet) using CV in Pipelines and most of all on inspecting and comparing feature importances for both models (among others with eli5 library).
+
+Results: Both model have a similar r2-Score of roughly 0.9. Comparing the 15 most important features for both models we can see that only 7 of them are matching. That is quite a surprise. We can also see that using feature importance for feature selection prior to model fitting can lead to an increase in performance (see last section of notebook 4).
 
 ### Install
 
@@ -15,12 +18,14 @@ This project requires **Python 3.x** and the following Python libraries installe
 - [seaborn](http://seaborn.org)
 - [scikit-learn](http://scikit-learn.org/stable/)
 - [tqdm](https://pypi.org/project/tqdm/)
+- [XGBoost](https://xgboost.readthedocs.io/en/latest/#)
+- [eli5](https://eli5.readthedocs.io/en/latest/)
 
 You will also need to have software installed to run and execute an [iPython Notebook](http://ipython.org/notebook.html)
 
 ### Code
 
-...
+There are four numbered notebooks with self-explaining titels (at least that's what I hope).
 
 ### Data
 
