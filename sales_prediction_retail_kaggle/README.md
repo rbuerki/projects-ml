@@ -3,6 +3,8 @@ A repository containing code and data for a sales prediction project hosted on [
 
 Provided with daily historical sales data, the task is to forecast the total amount of products sold in every shop for the test set. The list of shops and products slightly changes every month. So creating a robust model that can handle such situations is part of the challenge.
 
+Submissions are evaluated by root mean squared error (RMSE). True target values are clipped into [0,20] range.
+
 ### Introduction to project and results
 
 ...
@@ -26,7 +28,7 @@ You will also need to have software installed to run and execute an [iPython Not
 
 ### Data
 
-**File descriptions** (original files are stored under `/data/raw`)
+**File descriptions** (original files can be downloaded directly from kaggle)
 - `sales_train.csv` - the training set. Daily historical data from January 2013 to October 2015.
 - `test.csv` - the test set. You need to forecast the sales for these shops and products for November 2015.
 - `sample_submission.csv` - a sample submission file in the correct format.
