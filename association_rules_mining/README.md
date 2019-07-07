@@ -1,5 +1,5 @@
-# Association Rules Mining Apriori Algorithm
-A repository containing code and experimental data for implemenation of basic association rules mining with the apriori algorithm.
+# Association Rules Mining 
+A repository containing code and experimental data for implemenation of basic association rules mining (ARM, also called frequent itemset mining or market basket analysis) with the apriori algorithm.
 
 The code and idea is based on this [blogpost](https://www.datatheque.com/posts/association-analysis/). 
 
@@ -8,7 +8,11 @@ The code and idea is based on this [blogpost](https://www.datatheque.com/posts/a
 We write an implementation that is leveraging the apriori algorithm to generate simple {A} -> {B} association rules. Since (for simplicity) we only care about understanding relationships between any given pair of items, using apriori to get to item sets of size 2 is sufficient.
 
 
-... WIP ...
+### Additional Resources
+
+- Good and profound introduction to ARM with Apriori in this [blogpost](https://medium.com/cracking-the-data-science-interview/an-introduction-to-big-data-itemset-mining-a97a17e0665a) (no code)
+
+
 
 ### Install
 
@@ -25,8 +29,7 @@ You will also need to have software installed to run and execute an [iPython Not
 
 ### Code
 
-Template code is provided in the `blog_automotiveChurn.ipynb` notebook file. 
-It requires the `churnData.csv` dataset file to run. 
+WIP
 
 ### Data
 
