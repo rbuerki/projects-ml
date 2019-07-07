@@ -18,7 +18,14 @@ We write an implementation that is leveraging the apriori algorithm to generate 
 
 ### Additional Resources
 
+Blogposts
+
 - Good and profound introduction to ARM with Apriori in this [blogpost](https://medium.com/cracking-the-data-science-interview/an-introduction-to-big-data-itemset-mining-a97a17e0665a) (no code)
+
+Papers
+
+- Tan, Steinbach, Kumar. Introduction to Data Mining. Pearson New International Edition. Harlow: Pearson Education Ltd., 2014. (pp. 327-414).
+- R. Agrawal, T. Imielinski, and A. Swami. Mining associations between sets of items in large databases. In Proc. of the ACM SIGMOD Int'l Conference on Management of Data, pages 207-216, Washington D.C., May 1993
 
 
 ### Install
@@ -30,7 +37,7 @@ This project requires **Python 3.x** and the following Python libraries installe
 - [matplotlib](http://matplotlib.org/)
 - [seaborn](http://seaborn.org)
 - [tqdm](https://pypi.org/project/tqdm/)
-- [MLxtnd](http://rasbt.github.io/mlxtend/)
+- [MLxtend](http://rasbt.github.io/mlxtend/)
 
 You will also need to have software installed to run and execute an [iPython Notebook](http://ipython.org/notebook.html)
 
