@@ -21,6 +21,7 @@ We write an implementation that is leveraging the apriori algorithm to generate 
 Blogposts
 
 - Good and profound introduction to ARM with Apriori in this [blogpost](https://medium.com/cracking-the-data-science-interview/an-introduction-to-big-data-itemset-mining-a97a17e0665a) (no code)
+- [Blogpost](https://select-statistics.co.uk/blog/market-basket-analysis-understanding-customer-behaviour/) with implementation with arviz package in R, nice for the plots (of which I 'copied' two).
 
 Papers
 
