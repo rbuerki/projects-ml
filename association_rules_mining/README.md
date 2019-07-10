@@ -1,19 +1,22 @@
 # Association Rules Mining 
-A repository containing code and experimental data for implemenation of association rules mining (ARM, also called frequent itemset mining or market basket analysis) with the apriori algorithm.
+A repository containing code and experimental data for implemenation of association rules mining (ARM, also called frequent itemset mining) with the apriori algorithm. In this case we use it for Market Basket Analysis
 
 
 ### Introduction to project and code
 
-WIP
+There is three noteboks:
 
-We write an implementation that is leveraging the apriori algorithm to generate simple {A} -> {B} association rules. Since (for simplicity) we only care about understanding relationships between any given pair of items, using apriori to get to item sets of size 2 is sufficient. The code and idea is based on this [blogpost](https://www.datatheque.com/posts/association-analysis/). 
+1. Write an implementation from scratch that is leveraging the apriori algorithm to generate simple {A} -> {B} association rules. Since (for simplicity) we only care about understanding relationships between any given pair of items, using apriori to get to item sets of size 2 is sufficient. The code and idea is based on this [blogpost](https://www.datatheque.com/posts/association-analysis/). 
+2. Perform ARM with help of the MLextnd library. First generate frequent itemsets with the apriori algorithm, then calculate the association rules und visualize the results. Description of the MLextnd functionalities can be found [here](http://rasbt.github.io/mlxtend/user_guide/frequent_patterns/association_rules/).
 
 
 ### Data
 
+For notebook 1:
 “The Instacart Online Grocery Shopping Dataset 2017”, accessed from [here](https://www.instacart.com/datasets/grocery-shopping-2017) on July, 4th 2019. For information about the contents of the files, see this [data dictionary](https://gist.github.com/jeremystan/c3b39d947d9b88b3ccff3147dbcf6c6b).
 
-(The second notebook is based on another private data source that can not be disclosed.)
+For notebook 2:
+Private data set of a B2B retailer that can not be disclosed.
 
 
 ### Additional Resources
