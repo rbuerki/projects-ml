@@ -5,6 +5,8 @@ Each project has it's own README providing more details.
 
 ### Overview:
 
+- **assosiation_rules_mining:** A repository containing code for implemenation of association rules mining (ARM, also called frequent itemset mining) with the apriori algorithm. In this case we use it for Market Basket Analysis. There is an implementation from scratch and a real use case on a b2b retail dataset using the MLextnd package.
+
 - **customer_lifetime_value_modelling:**  A project predicting (residual) customer lifetime value (clv) in non-contracutal business.
   Methodology is based on paper by Dr. Peter Fader of Wharton, the underlying math is handled by the `lifetimes` package. The project highlights some problems of this approach.
 
