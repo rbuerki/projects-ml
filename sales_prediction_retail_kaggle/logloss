@@ -1,9 +1,0 @@
-import numpy as np
-
-def logloss(true_label, predicted_prob):
-    if true_label == 1:
-        print(-np.log(predicted_prob))
-    else:
-        print(-np.log(1 - predicted_prob))
-
-logloss(1, 0.364)
