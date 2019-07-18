@@ -10,6 +10,8 @@ Each project has it's own README providing more details.
 - **customer_lifetime_value_modelling:**  A project predicting (residual) customer lifetime value (clv) in non-contracutal business.
   Methodology is based on paper by Dr. Peter Fader of Wharton, the underlying math is handled by the `lifetimes` package. The project highlights some problems of this approach.
 
+- **customer_segmentation_RFM_method:** Performing customer segmentation with the RFM method (Recency, Frequency, Monetary Value). Two approaches have been tested, one with k-means clustering and one with the 'classic' quantile method. The results have been compared, but without deeper analysis - this project is focused on code implementation.
+
 - **customer_segmentation_unsupervised_kmeans:** Finding customer segments with PCA and k-means. Note: Everything in this
   project has been applied on a much more complex dataset in the Starbucks' segmentation challenge project.
   _In the resources folder are several notebooks on different unsupervised algorithms from Udacity's MLE nanodegree course._
