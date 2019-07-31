@@ -47,7 +47,7 @@ This project requires **Python 3.x** and the following Python libraries installe
 ### Run
 
 In a terminal or command window, navigate to the top-level project directory (the one that contains this README) 
-and run one the following commands:
+and run all of the following commands:
 
 Launch ETL Pipeline
 ```bash
