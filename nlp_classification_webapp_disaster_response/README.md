@@ -46,8 +46,7 @@ This project requires **Python 3.x** and the following Python libraries installe
 
 ### Run
 
-In a terminal or command window, navigate to the top-level project directory (the one that contains this README) 
-and run all of the following commands:
+In a terminal or command window, navigate to the top-level project directory (the one that contains this README). If you want to re-train the whole model run all of the following commands. If you just want to get recommendations based on the existing model, launch only the ETL pipeline and the web app.
 
 Launch ETL Pipeline
 ```bash
