@@ -1,9 +1,13 @@
 # Created by https://www.gitignore.io/api/python,windows,jupyternotebook
 # Edit at https://www.gitignore.io/?templates=python,windows,jupyternotebook
 
+###raph stuff###
+z_ml-demo_titanic
+
 ### JupyterNotebook ###
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
+
 
 # Remove previous ipynb_checkpoints
 #   git rm -r .ipynb_checkpoints/
