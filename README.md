@@ -5,8 +5,6 @@ Each project has it's own README providing more details.
 
 ### Overview:
 
-- **assosiation_rules_mining:** A repository containing code for implemenation of association rules mining (ARM, also called frequent itemset mining) with the apriori algorithm. In this case we use it for Market Basket Analysis. There is an implementation from scratch and a real use case on a b2b retail dataset using the MLextnd package.
-
 - **customer_lifetime_value_modelling:**  A project predicting (residual) customer lifetime value (clv) in non-contracutal business.
   Methodology is based on paper by Dr. Peter Fader of Wharton, the underlying math is handled by the `lifetimes` package. The project highlights some problems of this approach.
 
@@ -15,6 +13,8 @@ Each project has it's own README providing more details.
 - **customer_segmentation_unsupervised_kmeans:** Finding customer segments with PCA and k-means. Note: Everything in this
   project has been applied on a much more complex dataset in the Starbucks' segmentation challenge project.
   _In the resources folder are several notebooks on different unsupervised algorithms from Udacity's MLE nanodegree course._
+
+  - **market_basket_analysis:** A repository containing code for implemenation of association rules mining (ARM, also called frequent itemset mining) with the apriori algorithm. There is an implementation from scratch and a real use case on a b2b retail dataset using the MLextnd package. In a third notebook the rules are further analyzed with graph analytics with help of the networkX library.
 
 - **nlp_classification_webapp_disaster_response:** Pt. 1: NLP Classification with Multi-Label Target Pt. 2: Creating a Web-App
   for message classification. The classification happens in a neat end-to-end sklearn pipeline.
