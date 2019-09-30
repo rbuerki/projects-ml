@@ -4,9 +4,9 @@
 
 ### Introduction to project and results
 
-The focus of this project is on finding the right feature preprocessing (for ElasticNet) using CV in Pipelines and most of all on inspecting and comparing feature importances for both models (among others with eli5 library).
+The focus of this project is a) on finding the right feature preprocessing methods (for ElasticNet) using CV in Pipelines and b), most important, on inspecting and comparing feature importances for both models (among others with eli5 library).
 
-Results: Both model have a similar r2-Score of roughly 0.9. Comparing the 15 most important features for both models we can see that only 7 of them are matching. That is quite a surprise. We can also see that using feature importance for feature selection prior to model fitting can lead to an increase in performance (see last section of notebook 4).
+Results: Both model have a similar r2-Score of roughly 0.9. Comparing the 15 most important features for both models we can see that only 7 of them are matching. That is quite a surprise. We can also see that using feature importance for feature selection prior to model fitting can lead to an increase in performance (--> see last section of notebook 4).
 
 ### Install
 
