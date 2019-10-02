@@ -48,18 +48,18 @@ def transform_formData(formData):
     mean_fares = {1: 87.74, 2: 21.15, 3: 13.27}
 
     data = []
-    data.append(formData['age'])
-    data.append(formData['sibs'])
-    data.append(formData['parch'])
-    data.append(mean_fares[formData['pClass']])
+    data.append(int(formData['age']))
+    data.append(int(formData['sibs']))
+    data.append(int(formData['parch']))
+    data.append(mean_fares[int(formData['pClass'])])
     # for pclass (which has 2 cols due to encoding)
-    if formData['pClass'] == 1:
+    if int(formData['pClass']) == 1:
         data.append(0)
         data.append(0)
-    elif formData['pClass'] == 2:
+    elif int(formData['pClass']) == 2:
         data.append(1)
         data.append(0)
-    elif formData['pClass'] == 3:
+    elif int(formData['pClass']) == 3:
         data.append(0)
         data.append(1)
     # for gender
