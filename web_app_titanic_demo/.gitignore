@@ -2,9 +2,7 @@
 # Edit at https://www.gitignore.io/?templates=python,windows,jupyternotebook
 
 ### RAB's own stuff ###
-trash
-data
-z_ml-demo_titanic
+z_trash
 
 ### JupyterNotebook ###
 .ipynb_checkpoints
