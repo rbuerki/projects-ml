@@ -3,7 +3,9 @@
 A repository containing some (interesting) machine learning projects done for practice and kept for reference.
 Each project has it's own README providing more details.
 
-### Overview:
+## Overview
+
+- **churn_featuretools_pipeline:**  Contrary to the other projects here, this is actually a "real life" use case from my job. And it shows the data load and feature preprocessing pipeline only. The interesting part is the experimentation with and then application of the featuretools library for feature generation.
 
 - **customer_lifetime_value_modelling:**  A project predicting (residual) customer lifetime value (clv) in non-contracutal business.
   Methodology is based on paper by Dr. Peter Fader of Wharton, the underlying math is handled by the `lifetimes` package. The project highlights some problems of this approach.
@@ -22,10 +24,10 @@ Each project has it's own README providing more details.
 
 - **price_prediction_ames_housing:** Supervised regression modelling to predict house prices. Comparision of ElasticNet and XGBoost. The focus of this project is on finding the right feature preprocessing and most of all on inspecting feature importances (among others with eli5 library).
 
-- **recommender_systems_IBM-Watson:** More like a showcase of different approaches for creating a recommender system. (rank-based, content-based (with NLP part), user-based, Funk-SVD). 
+- **recommender_systems_IBM-Watson:** More like a showcase of different approaches for creating a recommender system. (rank-based, content-based (with NLP part), user-based, Funk-SVD).
   _Extensive resources section from Udacity's DS nanodegree course, also containing a complete recommender class._
- 
+
 - **survival_analysis_lifetimes:** Exploration of the functionality of Cameron Davidson's lifelines package. Goal is to construct survival functions / survival curves for customers (as a whole, in cohorts and individual). This is an alternative approach to churn analysis, based on the durations of customer relationship.
 
-- **uplift_modelling_imbalanced_starbucks:** uplift modelling project dealing with very imbalanced target classes. The main point 
+- **uplift_modelling_imbalanced_starbucks:** uplift modelling project dealing with very imbalanced target classes. The main point
   was to experiment with the `imblearn` package and to create a pipeline that oversamples the minority target class with SMOTENC.
