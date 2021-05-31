@@ -31,3 +31,5 @@ Each project has it's own README providing more details.
 
 - **uplift_modelling_imbalanced_starbucks:** uplift modelling project dealing with very imbalanced target classes. The main point
   was to experiment with the `imblearn` package and to create a pipeline that oversamples the minority target class with SMOTENC.
+
+- **web_FastAPI_deployment:** Mini-Project to introduce myself to the FastAPI library. We train a super simple Random Forest Classifier and build a REST API that exposes the predictions for new observations based on that model.
